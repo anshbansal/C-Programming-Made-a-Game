@@ -1,4 +1,5 @@
-﻿Module Glossary_Strings
+﻿Module Control_Glossary
+
     'First Batch of Glossary of Keywords
     Public Const String_Tool As String = "Keywords:-" & Chr(13) & "Tool, IDE, Code:Blocks, Integrated Development Environment, C Software, Compiler" & Chr(13) & "" & Chr(13) & "Introduction:-" & Chr(13) & "When making softwares using C Language a software called IDE(Integrated Development Environment) is generally used. It is the most common type of C software used. It is actually a collection of various softwares which are needed to properly convert a C code into an executable program." & Chr(13) & "" & Chr(13) & "Code:Blocks, the software that you are using is also an IDE. It is a free software and there are various versions for different Operating Systems like Windows, Linux, Mac." & Chr(13) & "" & Chr(13) & "This is not the only IDE present. There are many different IDEs. Some of them are free but there are many for which you have to pay money to use them." & Chr(13) & "" & Chr(13) & "There are many parts of an IDE. " & Chr(13) & "The two main parts that we usually deal with are the text editor and the compiler. The text editor is the part in which you type the code. Notepad is a simple example of a text editor. The other one - ""compiler"" is a type of software that you will mostly see when doing programming. It is a software that converts the code written in C language into instructions for the computer in the computer's ""machine language""." & Chr(13) & "" & Chr(13) & "When we press F9 in codeblocks we are actually starting the compile process. Compiler runs, converts C language into machine language and then we get our program."
     Public Const String_Open_Source As String = "Keywords:-" & Chr(13) & "Open Source" & Chr(13) & "" & Chr(13) & "About:-" & Chr(13) & "On the internet you can find many softwares that are free to download. There are also some softwares known as open-source softwares that are free to download and their source code is also available freely." & Chr(13) & "" & Chr(13) & "" & Chr(13) & "You may think that there are free softwares available everwhere so why should you know about open-source?" & Chr(13) & "The answer is: " & Chr(13) & "1. As programmers getting the source code of a software can be very useful. By spending some time to understand how the source code is making the software work you can learn to make different types of softwares free of cost. " & Chr(13) & "2. Open source softwares allow you to modify the Source code (with some restrictions) to make something different. So, if you are using a software and learn how it works you can add new features."
@@ -15,4 +16,104 @@
     'Second Batch of Glossary of Keywords
 
     'First Batch of Glossary of Libraries And Functions
+
+
+
+    Public Sub AddKeywords()
+        'First Batch of Glossary Keywords
+        Form1.Lessons.Items.Clear()
+        Form1.Lessons.Items.Add("Tool")
+        Form1.Lessons.Items.Add("Open Source")
+        Form1.Lessons.Items.Add("IDE")
+        Form1.Lessons.Items.Add("Glossary")
+        Form1.Lessons.Items.Add("Keywords")
+        Form1.Lessons.Items.Add("Libraries")
+        Form1.Lessons.Items.Add("Functions")
+        Form1.Lessons.Items.Add("Code:Blocks")
+        Form1.Lessons.Items.Add("Tooltip")
+        Form1.Lessons.Items.Add("Code:Blocks Shortcuts")
+        Form1.Lessons.Items.Add("Programming")
+        Form1.Lessons.Items.Add("C Language")
+        Form1.Lessons.Items.Add("Use of C Language")
+        Form1.Lessons.Items.Add("Integrated Development Environment")
+        Form1.Lessons.Items.Add("C Software")
+        Form1.Lessons.Items.Add("Compiler")
+        Form1.Lessons.Items.Add("Code")
+        Form1.Lessons.Items.Add("C Code")
+        Form1.Lessons.Items.Add("Source Code")
+        Form1.Lessons.Items.Add("Escape Identifiers")
+        Form1.Lessons.Items.Add("New Line")
+        Form1.Lessons.Items.Add("Line Break")
+        Form1.Lessons.Items.Add("Tab Feed")
+        Form1.Lessons.Items.Add("Comments")
+
+        'Second Batch of Glossary Keywords
+
+    End Sub
+
+
+    Public Sub AddLibraries()
+        Form1.Lessons.Items.Clear()
+        Form1.Lessons.Items.Add("None Added")
+    End Sub
+
+    'The reason that I am using strings for all the keywords is because
+    'Many of them are synonyms and will display the same thing
+    Public Sub Glossary_Button_Clicked()
+        'This subroutine contains case statements for both Glossary of Keywords and Glossary of Libraries And Functions
+        Select Case Form1.Lessons.SelectedItem
+            'First Batch of Glossary of Keywords
+            Case "Tool"
+                Form1.Display2.Text = String_Tool
+            Case "Open Source"
+                Form1.Display2.Text = String_Open_Source
+            Case "IDE"
+                Form1.Display2.Text = String_Tool
+            Case "Glossary"
+                Form1.Display2.Text = String_Glossarys
+            Case "Keywords"
+                Form1.Display2.Text = String_Glossarys
+            Case "Libraries"
+                Form1.Display2.Text = String_Libraries
+            Case "Functions"
+                Form1.Display2.Text = String_Libraries
+            Case "Code:Blocks"
+                Form1.Display2.Text = String_Tool
+            Case "Tooltip"
+                Form1.Display2.Text = String_Tooltip
+            Case "Code:Blocks Shortcuts"
+                Form1.Display2.Text = String_Code_Blocks_Shortcuts
+            Case "Programming"
+                Form1.Display2.Text = String_Programming
+            Case "C Language"
+                Form1.Display2.Text = String_C_Language
+            Case "Use of C Language"
+                Form1.Display2.Text = String_C_Language
+            Case "Integrated Development Environment"
+                Form1.Display2.Text = String_Tool
+            Case "C Software"
+                Form1.Display2.Text = String_Tool
+            Case "Compiler"
+                Form1.Display2.Text = String_Tool
+            Case "Code"
+                Form1.Display2.Text = String_Code
+            Case "C Code"
+                Form1.Display2.Text = String_Code
+            Case "Source Code"
+                Form1.Display2.Text = String_Code
+            Case "Escape Identifiers"
+                Form1.Display2.Text = String_Escape_Identifiers
+            Case "New Line"
+                Form1.Display2.Text = String_Escape_Identifiers
+            Case "Line Break"
+                Form1.Display2.Text = String_Escape_Identifiers
+            Case "Tab Feed"
+                Form1.Display2.Text = String_Escape_Identifiers
+            Case "Comments"
+                Form1.Display2.Text = String_Comments
+
+                'Second Batch of Glossary Keywords
+
+        End Select
+    End Sub
 End Module

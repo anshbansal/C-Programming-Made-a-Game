@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>E:\Study\Codes_and_Designs\Microsoft Visual Studio Workspace\C Code generator\Setup\|C:\Users\Aseem\Desktop\My apps\C Code generator\|publish\</PublishUrlHistory>
+    <PublishUrlHistory>publish\|E:\Study\Codes_and_Designs\Microsoft Visual Studio Workspace\C Code generator\Setup\|C:\Users\Aseem\Desktop\My apps\C Code generator\</PublishUrlHistory>
     <InstallUrlHistory />
     <SupportUrlHistory />
     <UpdateUrlHistory />
-    <BootstrapperUrlHistory />
+    <BootstrapperUrlHistory>E:\Study\Codes_and_Designs\Microsoft Visual Studio Workspace\C Code generator\Setup_Required_Files</BootstrapperUrlHistory>
     <ErrorReportUrlHistory />
     <FallbackCulture>en-US</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>
