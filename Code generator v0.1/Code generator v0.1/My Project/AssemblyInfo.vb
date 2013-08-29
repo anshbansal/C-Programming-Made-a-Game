@@ -1,4 +1,6 @@
-﻿Imports System
+﻿Imports System.Resources
+
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -8,14 +10,14 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Code generator v0.1")> 
+<Assembly: AssemblyTitle("C Programming Made A Game")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("Code generator v0.1")> 
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2012")> 
+<Assembly: AssemblyCompany("None till now")> 
+<Assembly: AssemblyProduct("C Programming Made A Game")> 
+<Assembly: AssemblyCopyright("Copyright © Aseem Bansal")> 
 <Assembly: AssemblyTrademark("")> 
 
-<Assembly: ComVisible(False)>
+<Assembly: ComVisible(False)> 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("6d5771c1-eaef-40df-ad14-c1935eb16245")> 
@@ -33,3 +35,5 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyVersion("1.0.0.0")> 
 <Assembly: AssemblyFileVersion("1.0.0.0")> 
+
+<Assembly: NeutralResourcesLanguageAttribute("en-IN")> 
