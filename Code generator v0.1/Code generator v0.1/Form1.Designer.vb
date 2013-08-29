@@ -23,15 +23,16 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.StartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TechnicalToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UpdateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WhyThisSoftwareToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GlossaryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KeywordsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LibrariesAndFunctionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutTheAuthorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UpdateToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContactInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TechnicalDetailsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Lessons = New System.Windows.Forms.ListBox()
         Me.Steps = New System.Windows.Forms.ListBox()
@@ -54,49 +55,24 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.AboutToolStripMenuItem1, Me.TechnicalToolStripMenuItem1, Me.HelToolStripMenuItem, Me.WhyThisSoftwareToolStripMenuItem, Me.GlossaryToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WhyThisSoftwareToolStripMenuItem, Me.StartToolStripMenuItem, Me.GlossaryToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(827, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'StartToolStripMenuItem
-        '
-        Me.StartToolStripMenuItem.Name = "StartToolStripMenuItem"
-        Me.StartToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
-        Me.StartToolStripMenuItem.Text = "Start"
-        '
-        'AboutToolStripMenuItem1
-        '
-        Me.AboutToolStripMenuItem1.Name = "AboutToolStripMenuItem1"
-        Me.AboutToolStripMenuItem1.Size = New System.Drawing.Size(52, 20)
-        Me.AboutToolStripMenuItem1.Text = "About"
-        '
-        'TechnicalToolStripMenuItem1
-        '
-        Me.TechnicalToolStripMenuItem1.Name = "TechnicalToolStripMenuItem1"
-        Me.TechnicalToolStripMenuItem1.Size = New System.Drawing.Size(108, 20)
-        Me.TechnicalToolStripMenuItem1.Text = "Technical Details"
-        '
-        'HelToolStripMenuItem
-        '
-        Me.HelToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UpdateToolStripMenuItem})
-        Me.HelToolStripMenuItem.Name = "HelToolStripMenuItem"
-        Me.HelToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.HelToolStripMenuItem.Text = "Help"
-        '
-        'UpdateToolStripMenuItem
-        '
-        Me.UpdateToolStripMenuItem.Name = "UpdateToolStripMenuItem"
-        Me.UpdateToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
-        Me.UpdateToolStripMenuItem.Text = "Update"
-        '
         'WhyThisSoftwareToolStripMenuItem
         '
         Me.WhyThisSoftwareToolStripMenuItem.Name = "WhyThisSoftwareToolStripMenuItem"
         Me.WhyThisSoftwareToolStripMenuItem.Size = New System.Drawing.Size(144, 20)
         Me.WhyThisSoftwareToolStripMenuItem.Text = "Why Use This Software?"
+        '
+        'StartToolStripMenuItem
+        '
+        Me.StartToolStripMenuItem.Name = "StartToolStripMenuItem"
+        Me.StartToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
+        Me.StartToolStripMenuItem.Text = "How to Use?"
         '
         'GlossaryToolStripMenuItem
         '
@@ -116,6 +92,37 @@ Partial Class Form1
         Me.LibrariesAndFunctionsToolStripMenuItem.Name = "LibrariesAndFunctionsToolStripMenuItem"
         Me.LibrariesAndFunctionsToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
         Me.LibrariesAndFunctionsToolStripMenuItem.Text = "Libraries And Functions"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutTheAuthorToolStripMenuItem, Me.UpdateToolStripMenuItem1, Me.ContactInformationToolStripMenuItem, Me.TechnicalDetailsToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'AboutTheAuthorToolStripMenuItem
+        '
+        Me.AboutTheAuthorToolStripMenuItem.Name = "AboutTheAuthorToolStripMenuItem"
+        Me.AboutTheAuthorToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.AboutTheAuthorToolStripMenuItem.Text = "About the author"
+        '
+        'UpdateToolStripMenuItem1
+        '
+        Me.UpdateToolStripMenuItem1.Name = "UpdateToolStripMenuItem1"
+        Me.UpdateToolStripMenuItem1.Size = New System.Drawing.Size(182, 22)
+        Me.UpdateToolStripMenuItem1.Text = "Update"
+        '
+        'ContactInformationToolStripMenuItem
+        '
+        Me.ContactInformationToolStripMenuItem.Name = "ContactInformationToolStripMenuItem"
+        Me.ContactInformationToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.ContactInformationToolStripMenuItem.Text = "Contact Information"
+        '
+        'TechnicalDetailsToolStripMenuItem
+        '
+        Me.TechnicalDetailsToolStripMenuItem.Name = "TechnicalDetailsToolStripMenuItem"
+        Me.TechnicalDetailsToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.TechnicalDetailsToolStripMenuItem.Text = "Technical Details"
         '
         'Button1
         '
@@ -310,6 +317,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "C Programming Made A Game "
@@ -320,7 +328,6 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents HelToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Lessons As System.Windows.Forms.ListBox
     Friend WithEvents Steps As System.Windows.Forms.ListBox
@@ -334,9 +341,6 @@ Partial Class Form1
     Friend WithEvents Current_Display As System.Windows.Forms.RichTextBox
     Friend WithEvents StartToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RadioButton6 As System.Windows.Forms.RadioButton
-    Friend WithEvents AboutToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TechnicalToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents UpdateToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents WhyThisSoftwareToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GlossaryToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents KeywordsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -346,5 +350,10 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents HelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AboutTheAuthorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents UpdateToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ContactInformationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TechnicalDetailsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

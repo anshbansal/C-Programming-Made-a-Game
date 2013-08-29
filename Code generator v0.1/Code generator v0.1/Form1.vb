@@ -2,7 +2,7 @@
 
     Public Const String_Version As String = "v 0.7"
     Public Const String_Project_Start As String = "24th August 2012"
-    Public Const String_Version_Release As String = "Not Yet"
+    Public Const String_Version_Release As String = "4th September 2012"
 
     Public Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         'This subroutine is used when GLOSSARY IS ENDED
@@ -63,26 +63,6 @@
         Current_Display.Text = "How to use this software"
         Display.Text = String_Start
     End Sub
-    Public Sub AboutToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem1.Click
-        Label3.Text = "What is being Displayed"
-        Current_Display.Text = "About this software"
-        Display.Text = String_About
-    End Sub
-    Public Sub TechnicalToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TechnicalToolStripMenuItem1.Click
-        Label3.Text = "What is being Displayed"
-        Current_Display.Text = "Technical Details"
-        Display.Text = String_Technical
-    End Sub
-    Public Sub UpdateToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UpdateToolStripMenuItem.Click
-        Label3.Text = "What is being Displayed"
-        Current_Display.Text = "Updating this software"
-        Display.Text = String_Update
-    End Sub
-    Public Sub HelToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HelToolStripMenuItem.Click
-        Label3.Text = "What is being Displayed"
-        Current_Display.Text = "Help"
-        Display.Text = String_Help
-    End Sub
     Public Sub WhyThisSoftwareToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles WhyThisSoftwareToolStripMenuItem.Click
         Label3.Text = "What is being Displayed"
         Current_Display.Text = "Why you should use this software"
@@ -120,4 +100,25 @@
         Button3_Clicked() 'Leave this alone
     End Sub
     'LEAVE ALONE TILL HERE
+
+    Private Sub AboutTheAuthorToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AboutTheAuthorToolStripMenuItem.Click
+        Label3.Text = "What is being Displayed"
+        Current_Display.Text = "About this software"
+        Display.Text = String_About
+    End Sub
+    Private Sub TechnicalDetailsToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles TechnicalDetailsToolStripMenuItem.Click
+        Label3.Text = "What is being Displayed"
+        Current_Display.Text = "Technical Details"
+        Display.Text = String_Technical
+    End Sub
+    Private Sub ContactInformationToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ContactInformationToolStripMenuItem.Click
+        Label3.Text = "What is being Displayed"
+        Current_Display.Text = "Help"
+        Display.Text = String_Help
+    End Sub
+    Private Sub UpdateToolStripMenuItem1_Click(sender As System.Object, e As System.EventArgs) Handles UpdateToolStripMenuItem1.Click
+        Label3.Text = "What is being Displayed"
+        Current_Display.Text = "Updating this software"
+        Display.Text = String_Update
+    End Sub
 End Class

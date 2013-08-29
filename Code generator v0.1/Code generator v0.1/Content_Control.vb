@@ -85,7 +85,7 @@
                         Form1.Display.Text = String_Lesson01_Step01_Code_To_Be_Copied
                     Case "Step 02"
                         Form1.Display.Text = String_Lesson01_Step02_Code_To_Be_Copied
-                    Case "Step 02"
+                    Case "Step 03"
                         Form1.Display.Text = String_Lesson01_Step03_Code_To_Be_Copied
                 End Select
             Case "Lesson 02"

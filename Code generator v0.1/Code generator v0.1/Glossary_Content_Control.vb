@@ -40,8 +40,9 @@
     'The reason that I am using strings for all the keywords is because
     'Many of them are synonyms and will display the same thing
     Public Sub Button3_Clicked()
+        'This subroutine contains case statements for both Glossary of Keywords and Glossary of Libraries And Functions
         Select Case Form1.Lessons.SelectedItem
-            'First Batch of Glossary Keywords
+            'First Batch of Glossary of Keywords
             Case "Tool"
                 Form1.Display.Text = String_Tool
             Case "Open Source"
