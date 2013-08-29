@@ -1,23 +1,22 @@
 ﻿Public Class Form1
 
     Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
-        MessageBox.Show("How can this app help you:-" &
-               Chr(13) &
-               "It can give you the C codes that you are looking for" &
+        Display.Text = "How can this app help YOU??" &
                Chr(13) & Chr(13) &
-               "Developer :" &
-               Chr(13) &
-               "Aseem Bansal" &
+               "            It can teach you C language without Books" &
                Chr(13) & Chr(13) &
-               "Project Started on:-" &
-               Chr(13) &
-               "24th August 2012",
-               "About"
-               )
+               "                In 15 MINUTES AT A TIME" &
+                Chr(13) & Chr(13) &
+               "Developer           =>   Aseem Bansal" &
+               Chr(13) & Chr(13) &
+               "Project Started on  =>   24th August 2012" &
+               Chr(13) & Chr(13) &
+               "Current Version     =>   0.2"
+
     End Sub
 
     Private Sub VersionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VersionToolStripMenuItem.Click
-        MessageBox.Show("This is still a work in progress so" &
+        Display.Text = "This is still a work in progress so" &
                Chr(13) &
                "If you want more features JUST send an me an e-mail about what you want " &
                Chr(13) &
@@ -27,21 +26,48 @@
                Chr(13) &
                "Please write" &
                Chr(13) &
-               "[C Code generator v0.1]" &
+               "[C Programming Made A Game]" &
                Chr(13) &
                "in the title of the e-mail" &
                Chr(13) & Chr(13) &
                "CONTACT:-" &
                Chr(13) &
-               "aseembansal@ymail.com",
-               "Adding more features to this")
+               "aseembansal@ymail.com"
     End Sub
 
     Private Sub TechnicalToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TechnicalToolStripMenuItem.Click
-        MessageBox.Show("Tool on which the Codes have been tested" &
+        Display.Text = "Tool on which the Codes have been tested" &
                Chr(13) &
-               "1. Code:Blocks (An Open Source C/C++ IDE)  http://www.codeblocks.org/", "Technical Detials"
-               )
+               "1. Code:Blocks (An Open Source C/C++ IDE)  http://www.codeblocks.org/"
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Select Lessons.SelectedItem
+            Case "Lesson 01"
+                Me.Steps.Items.Clear()
+                Me.Steps.Items.Add("Step 01")
+            Case "Lesson 02"
+                Me.Steps.Items.Clear()
+                Me.Steps.Items.Add("No Steps Added Here")
+            Case "Lesson 03"
+                Me.Steps.Items.Clear()
+                Me.Steps.Items.Add("No Steps Added Here")
+            Case "Lesson 04"
+                Me.Steps.Items.Clear()
+                Me.Steps.Items.Add("No Steps Added Here")
+        End Select
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Select Case Lessons.SelectedItem
+            Case "Lesson 01"
+                Select Case Steps.SelectedItem
+                    Case "Step 01"
+
+                        Display.Text = "Aseem Bansal"
+                End Select
+            Case "Lesson 02"
+        End Select
     End Sub
 
 End Class

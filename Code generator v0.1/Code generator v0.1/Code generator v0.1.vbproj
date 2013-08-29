@@ -8,15 +8,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{1328CA98-0177-4A16-BD61-014A46C38440}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Code_generator_v0._1.My.MyApplication</StartupObject>
-    <RootNamespace>Code_generator_v0._1</RootNamespace>
-    <AssemblyName>Code generator v0.1</AssemblyName>
+    <StartupObject>C_Programming_Made_A_Game.My.MyApplication</StartupObject>
+    <RootNamespace>C_Programming_Made_A_Game</RootNamespace>
+    <AssemblyName>C Programming Made A Game</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Aseem\Desktop\My apps\C Code generator\</PublishUrl>
+    <PublishUrl>E:\Study\Codes_and_Designs\Microsoft Visual Studio Workspace\C Code generator\Setup\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -28,11 +28,12 @@
     <MapFileExtensions>true</MapFileExtensions>
     <PublisherName>Aseem Bansal</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>0.2.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
-    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -41,7 +42,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Code generator v0.1.xml</DocumentationFile>
+    <DocumentationFile>C Programming Made A Game.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -51,7 +52,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Code generator v0.1.xml</DocumentationFile>
+    <DocumentationFile>C Programming Made A Game.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
