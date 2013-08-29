@@ -27,14 +27,14 @@ Partial Class Form1
         Me.AboutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TechnicalToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContactMeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UpdateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WhyThisSoftwareToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GlossaryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.KeywordsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LibrariesAndFunctionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Lessons = New System.Windows.Forms.ListBox()
         Me.Steps = New System.Windows.Forms.ListBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
@@ -42,19 +42,22 @@ Partial Class Form1
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.Display = New System.Windows.Forms.RichTextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Current_Display = New System.Windows.Forms.RichTextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.RadioButton6 = New System.Windows.Forms.RadioButton()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.AboutToolStripMenuItem1, Me.TechnicalToolStripMenuItem1, Me.HelToolStripMenuItem, Me.WhyThisSoftwareToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.AboutToolStripMenuItem1, Me.TechnicalToolStripMenuItem1, Me.HelToolStripMenuItem, Me.WhyThisSoftwareToolStripMenuItem, Me.GlossaryToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(823, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(827, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -78,21 +81,15 @@ Partial Class Form1
         '
         'HelToolStripMenuItem
         '
-        Me.HelToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContactMeToolStripMenuItem, Me.UpdateToolStripMenuItem})
+        Me.HelToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UpdateToolStripMenuItem})
         Me.HelToolStripMenuItem.Name = "HelToolStripMenuItem"
         Me.HelToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelToolStripMenuItem.Text = "Help"
         '
-        'ContactMeToolStripMenuItem
-        '
-        Me.ContactMeToolStripMenuItem.Name = "ContactMeToolStripMenuItem"
-        Me.ContactMeToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
-        Me.ContactMeToolStripMenuItem.Text = "Contact Me"
-        '
         'UpdateToolStripMenuItem
         '
         Me.UpdateToolStripMenuItem.Name = "UpdateToolStripMenuItem"
-        Me.UpdateToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
+        Me.UpdateToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.UpdateToolStripMenuItem.Text = "Update"
         '
         'WhyThisSoftwareToolStripMenuItem
@@ -100,6 +97,25 @@ Partial Class Form1
         Me.WhyThisSoftwareToolStripMenuItem.Name = "WhyThisSoftwareToolStripMenuItem"
         Me.WhyThisSoftwareToolStripMenuItem.Size = New System.Drawing.Size(144, 20)
         Me.WhyThisSoftwareToolStripMenuItem.Text = "Why Use This Software?"
+        '
+        'GlossaryToolStripMenuItem
+        '
+        Me.GlossaryToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KeywordsToolStripMenuItem, Me.LibrariesAndFunctionsToolStripMenuItem})
+        Me.GlossaryToolStripMenuItem.Name = "GlossaryToolStripMenuItem"
+        Me.GlossaryToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
+        Me.GlossaryToolStripMenuItem.Text = "Glossary"
+        '
+        'KeywordsToolStripMenuItem
+        '
+        Me.KeywordsToolStripMenuItem.Name = "KeywordsToolStripMenuItem"
+        Me.KeywordsToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.KeywordsToolStripMenuItem.Text = "Keywords"
+        '
+        'LibrariesAndFunctionsToolStripMenuItem
+        '
+        Me.LibrariesAndFunctionsToolStripMenuItem.Name = "LibrariesAndFunctionsToolStripMenuItem"
+        Me.LibrariesAndFunctionsToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.LibrariesAndFunctionsToolStripMenuItem.Text = "Libraries And Functions"
         '
         'Button1
         '
@@ -110,21 +126,10 @@ Partial Class Form1
         Me.Button1.Text = "Lesson Selected"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(30, 27)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 16)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "List of Lessons"
-        '
         'Lessons
         '
         Me.Lessons.FormattingEnabled = True
-        Me.Lessons.Items.AddRange(New Object() {"Lesson 01", "Lesson 02"})
-        Me.Lessons.Location = New System.Drawing.Point(6, 43)
+        Me.Lessons.Location = New System.Drawing.Point(6, 47)
         Me.Lessons.Name = "Lessons"
         Me.Lessons.Size = New System.Drawing.Size(152, 82)
         Me.Lessons.TabIndex = 6
@@ -136,16 +141,6 @@ Partial Class Form1
         Me.Steps.Name = "Steps"
         Me.Steps.Size = New System.Drawing.Size(152, 121)
         Me.Steps.TabIndex = 7
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(30, 172)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(80, 16)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "List of Steps"
         '
         'Button2
         '
@@ -222,16 +217,6 @@ Partial Class Form1
         Me.Display.TabIndex = 17
         Me.Display.Text = ""
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(649, 24)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(153, 16)
-        Me.Label2.TabIndex = 18
-        Me.Label2.Text = "Main Goal of this Lesson"
-        '
         'Current_Display
         '
         Me.Current_Display.BackColor = System.Drawing.SystemColors.ControlLightLight
@@ -241,16 +226,6 @@ Partial Class Form1
         Me.Current_Display.Size = New System.Drawing.Size(199, 169)
         Me.Current_Display.TabIndex = 19
         Me.Current_Display.Text = ""
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(686, 40)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(79, 16)
-        Me.Label4.TabIndex = 20
-        Me.Label4.Text = "is to learn to"
         '
         'RadioButton6
         '
@@ -263,16 +238,65 @@ Partial Class Form1
         Me.RadioButton6.Text = "None"
         Me.RadioButton6.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label1.Location = New System.Drawing.Point(6, 26)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(152, 18)
+        Me.Label1.TabIndex = 22
+        Me.Label1.Text = "Label1"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label2
+        '
+        Me.Label2.Location = New System.Drawing.Point(6, 174)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(152, 18)
+        Me.Label2.TabIndex = 23
+        Me.Label2.Text = "Label2"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label3
+        '
+        Me.Label3.Location = New System.Drawing.Point(624, 26)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(191, 27)
+        Me.Label3.TabIndex = 24
+        Me.Label3.Text = "Label3"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(0, 285)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(158, 45)
+        Me.Button3.TabIndex = 25
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(713, 231)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(102, 39)
+        Me.Button4.TabIndex = 26
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(823, 381)
-        Me.Controls.Add(Me.RadioButton6)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Current_Display)
+        Me.ClientSize = New System.Drawing.Size(827, 381)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.RadioButton6)
+        Me.Controls.Add(Me.Current_Display)
         Me.Controls.Add(Me.Display)
         Me.Controls.Add(Me.RadioButton5)
         Me.Controls.Add(Me.RadioButton4)
@@ -280,10 +304,8 @@ Partial Class Form1
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Steps)
         Me.Controls.Add(Me.Lessons)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -299,10 +321,8 @@ Partial Class Form1
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents HelToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Lessons As System.Windows.Forms.ListBox
     Friend WithEvents Steps As System.Windows.Forms.ListBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
@@ -310,15 +330,20 @@ Partial Class Form1
     Friend WithEvents RadioButton4 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton5 As System.Windows.Forms.RadioButton
     Friend WithEvents Display As System.Windows.Forms.RichTextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Current_Display As System.Windows.Forms.RichTextBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents StartToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RadioButton6 As System.Windows.Forms.RadioButton
     Friend WithEvents AboutToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TechnicalToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ContactMeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents UpdateToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents WhyThisSoftwareToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GlossaryToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents KeywordsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LibrariesAndFunctionsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 
 End Class
