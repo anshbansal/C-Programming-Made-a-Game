@@ -132,6 +132,7 @@ Partial Class Form1
         Me.Lessons.Location = New System.Drawing.Point(6, 47)
         Me.Lessons.Name = "Lessons"
         Me.Lessons.Size = New System.Drawing.Size(152, 82)
+        Me.Lessons.Sorted = True
         Me.Lessons.TabIndex = 6
         '
         'Steps

@@ -1,8 +1,8 @@
 ﻿Public Class Form1
 
-    Public Const String_Version As String = "v 0.5"
+    Public Const String_Version As String = "v 0.7"
     Public Const String_Project_Start As String = "24th August 2012"
-    Public Const String_Version_Release As String = "29th August 2012"
+    Public Const String_Version_Release As String = "Not Yet"
 
     Public Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         'This subroutine is used when GLOSSARY IS ENDED
@@ -115,6 +115,9 @@
     End Sub
     Public Sub RadioButton6_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadioButton6.CheckedChanged
         RadioButton6_Checked() 'Leave this alone
+    End Sub
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Button3_Clicked() 'Leave this alone
     End Sub
     'LEAVE ALONE TILL HERE
 End Class
