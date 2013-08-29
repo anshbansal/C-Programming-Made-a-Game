@@ -9,7 +9,7 @@
     End Sub
 
     Public Sub Button1_Clicked()
-        'This is used to add Steps to the List of Steps After Selecting Lesson Number
+        'This is used to ADD STEPS TO THE LIST OF STEPS After Selecting Lesson Number
         Form1.Label3.Text = "The Goal Of this lesson is to"
         Select Case Form1.Lessons.SelectedItem
             Case "Lesson 01"
@@ -19,13 +19,13 @@
                 Form1.Steps.Items.Add("Step 01")
                 Form1.Steps.Items.Add("Step 02")
                 Form1.Steps.Items.Add("Step 03")
+                Form1.Steps.Items.Add("Step 04")
             Case "Lesson 02"
                 Form1.Current_Display.Clear()
                 Form1.Current_Display.Text = String_Lesson02_Goal
                 Form1.Display.Clear()
                 Form1.Steps.Items.Clear()
                 Form1.Steps.Items.Add("Step 01")
-                Form1.Steps.Items.Add("Step 02")
         End Select
     End Sub
 
@@ -41,13 +41,15 @@
                         Form1.Display.Text = String_Lesson01_Step02_Goal
                     Case "Step 03"
                         Form1.Display.Text = String_Lesson01_Step03_Goal
+                    Case "Step 04"
+                        Form1.Display.Text = String_Lesson01_Step04_Goal
                 End Select
             Case "Lesson 02"
                 Select Case Form1.Steps.SelectedItem
                     Case "Step 01"
-                        Form1.Display.Text = ""
+                        Form1.Display.Text = String_Lesson02_Step01_Goal
                     Case "Step 02"
-                        Form1.Display.Text = ""
+                        Form1.Display.Text = String_Lesson02_Step02_Goal
                 End Select
         End Select
     End Sub
@@ -64,13 +66,19 @@
                         Form1.Display.Text = String_Lesson01_Step02_Instructions
                     Case "Step 03"
                         Form1.Display.Text = String_Lesson01_Step03_Instructions
+                    Case "Step 04"
+                        Form1.Display.Text = String_Lesson01_Step04_Instructions
                 End Select
             Case "Lesson 02"
                 Select Case Form1.Steps.SelectedItem
                     Case "Step 01"
-                        Form1.Display.Text = ""
+                        Form1.Display.Text = String_Lesson02_Step01_Instructions
                     Case "Step 02"
-                        Form1.Display.Text = ""
+                        Form1.Display.Text = String_Lesson02_Step02_Instructions
+                    Case "Step 03"
+                        Form1.Display.Text = String_Lesson02_Step03_Instructions
+                    Case "Step 04"
+                        Form1.Display.Text = String_Lesson02_Step04_Instructions
                 End Select
         End Select
     End Sub
@@ -87,19 +95,25 @@
                         Form1.Display.Text = String_Lesson01_Step02_Code_To_Be_Copied
                     Case "Step 03"
                         Form1.Display.Text = String_Lesson01_Step03_Code_To_Be_Copied
+                    Case "Step 04"
+                        Form1.Display.Text = String_Lesson01_Step04_Code_To_Be_Copied
                 End Select
             Case "Lesson 02"
                 Select Case Form1.Steps.SelectedItem
                     Case "Step 01"
-                        Form1.Display.Text = ""
+                        Form1.Display.Text = String_Lesson02_Step01_Code_To_Be_Copied
                     Case "Step 02"
-                        Form1.Display.Text = ""
+                        Form1.Display.Text = String_Lesson02_Step02_Code_To_Be_Copied
+                    Case "Step 03"
+                        Form1.Display.Text = String_Lesson02_Step03_Code_To_Be_Copied
+                    Case "Step 04"
+                        Form1.Display.Text = String_Lesson02_Step04_Code_To_Be_Copied
                 End Select
         End Select
     End Sub
 
     Public Sub RadioButton4_Checked()
-        'This is used to set content of DETIALS OF THE CODE section
+        'This is used to set content of DETAILS OF THE CODE section
         Form1.Label3.Text = "The Goal Of this lesson is to"
         Select Case Form1.Lessons.SelectedItem
             Case "Lesson 01"
@@ -110,19 +124,25 @@
                         Form1.Display.Text = String_Lesson01_Step02_Details_Of_The_Code
                     Case "Step 03"
                         Form1.Display.Text = String_Lesson01_Step03_Details_Of_The_Code
+                    Case "Step 04"
+                        Form1.Display.Text = String_Lesson01_Step04_Details_Of_The_Code
                 End Select
             Case "Lesson 02"
                 Select Case Form1.Steps.SelectedItem
                     Case "Step 01"
-                        Form1.Display.Text = ""
+                        Form1.Display.Text = String_Lesson02_Step01_Details_Of_The_Code
                     Case "Step 02"
-                        Form1.Display.Text = ""
+                        Form1.Display.Text = String_Lesson02_Step02_Details_Of_The_Code
+                    Case "Step 03"
+                        Form1.Display.Text = String_Lesson02_Step03_Details_Of_The_Code
+                    Case "Step 04"
+                        Form1.Display.Text = String_Lesson02_Step04_Details_Of_The_Code
                 End Select
         End Select
     End Sub
 
     Public Sub RadioButton5_Checked()
-        'This is used to set content of FURTHER TECHNICAL DETAILS section
+        'This is used to set content of FURTHER DETAILS section
         Form1.Label3.Text = "The Goal Of this lesson is to"
         Select Case Form1.Lessons.SelectedItem
             Case "Lesson 01"
@@ -133,13 +153,19 @@
                         Form1.Display.Text = String_Lesson01_Step02_Further_Technical_Details
                     Case "Step 03"
                         Form1.Display.Text = String_Lesson01_Step03_Further_Technical_Details
+                    Case "Step 04"
+                        Form1.Display.Text = String_Lesson01_Step04_Further_Technical_Details
                 End Select
             Case "Lesson 02"
                 Select Case Form1.Steps.SelectedItem
                     Case "Step 01"
-                        Form1.Display.Text = ""
+                        Form1.Display.Text = String_Lesson02_Step01_Further_Technical_Details
                     Case "Step 02"
-                        Form1.Display.Text = ""
+                        Form1.Display.Text = String_Lesson02_Step02_Further_Technical_Details
+                    Case "Step 03"
+                        Form1.Display.Text = String_Lesson02_Step03_Further_Technical_Details
+                    Case "Step 04"
+                        Form1.Display.Text = String_Lesson02_Step04_Further_Technical_Details
                 End Select
         End Select
     End Sub

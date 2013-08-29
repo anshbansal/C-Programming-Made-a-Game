@@ -58,7 +58,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WhyThisSoftwareToolStripMenuItem, Me.StartToolStripMenuItem, Me.GlossaryToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(827, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(869, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -231,7 +231,7 @@ Partial Class Form1
         Me.Current_Display.Location = New System.Drawing.Point(624, 56)
         Me.Current_Display.Name = "Current_Display"
         Me.Current_Display.ReadOnly = True
-        Me.Current_Display.Size = New System.Drawing.Size(199, 169)
+        Me.Current_Display.Size = New System.Drawing.Size(233, 169)
         Me.Current_Display.TabIndex = 19
         Me.Current_Display.Text = ""
         '
@@ -285,7 +285,7 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(713, 231)
+        Me.Button4.Location = New System.Drawing.Point(767, 254)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(102, 39)
         Me.Button4.TabIndex = 26
@@ -297,7 +297,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(827, 381)
+        Me.ClientSize = New System.Drawing.Size(869, 381)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label3)

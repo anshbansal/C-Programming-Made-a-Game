@@ -1,8 +1,8 @@
 ﻿Public Class Form1
 
-    Public Const String_Version As String = "v 0.7"
+    Public Const String_Version As String = "v 0.9"
     Public Const String_Project_Start As String = "24th August 2012"
-    Public Const String_Version_Release As String = "4th September 2012"
+    Public Const String_Version_Release As String = "Not Yet"
 
     Public Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         'This subroutine is used when GLOSSARY IS ENDED
@@ -24,15 +24,18 @@
         AddLessons()
     End Sub
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'Handles The Form1 starting
         Me.Text = "C Programming Made A Game " & String_Version
-        Current_Display.Text = "How to use this software"
+        Current_Display.Text = "Learn how to use this software"
         Display.Text = String_Start
         Label1.Text = "List of Lessons"
         Label2.Text = "List of Steps"
         Label3.Text = "What is being Displayed"
-        Label1.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
-        Label2.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
-        Label3.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+        Label1.Font = New Font("Microsoft Sans Serif", 9.5, FontStyle.Regular)
+        Label2.Font = New Font("Microsoft Sans Serif", 9.5, FontStyle.Regular)
+        Label3.Font = New Font("Microsoft Sans Serif", 9.5, FontStyle.Regular)
+        Display.Font = New Font("Microsoft Sans Serif", 10, FontStyle.Regular)
+        Current_Display.Font = New Font("Microsoft Sans Serif", 9.4, FontStyle.Regular)
         Button3.Hide()
         Button4.Hide()
         AddLessons()
