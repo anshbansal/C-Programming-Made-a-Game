@@ -1,0 +1,113 @@
+http://programmingmadeagame.wordpress.com/download-links/
+
+_______________________________________________________________________________
+v0.9 ()
+_________________________
+URL: 
+
+CONTENT UPDATE:-
+1. Lesson02 Step01 Added
+GUI Changes:-
+1. Interface for choosing lessons changed. Lessons and steps now chosen through menus.
+2. Form divided into 2 tabs. One home tab and other containing glossary
+3. Rearranged the menu items
+4. Radio Button 6 hidden
+5. Added a status Strip to display Lesson Number and Step Number being Displayed
+6. Glossary Item's Explanation now displayed when item selected
+7. Changed cursor to HAND from pointer
+8. Added Context Menu to Display. Added Copy option to it. Now, right click is possible
+OTHER:-
+1. Improved Code's Modular Structure
+2. Made subroutines for many common things
+3. Found some new things in Visual Studio
+	3.1 Press F2 leads to "Object Browser" where about all things can be searched
+	3.2 If I search for a particular thing enough number of times like "RadioButton1" then after some searches a Form1.Designer.vb opens up. It contains the main vb code.
+
+_______________________________________________________________________________
+v0.8 (12th September 2012)
+_________________________
+URL: http://www.fileden.com/files/2012/8/23/3340224/Setup%20v0.8.zip
+
+CONTENT UPDATE:-:-
+1. Lesson01 Step04 done. No Further Technical details section
+2. Updated menu's content
+GUI CHANGES:-
+1. Font increased.
+OTHER:-
+1. Started Using Express Editions of Visual Studio
+_______________________________________________________________________________
+v0.7 (4th September 2012)
+_________________________
+URL: http://www.fileden.com/files/2012/8/23/3340224/Setup%20v0.7.zip
+
+CONTENT UPDATE:-
+1. Batch 1 of Glossary of Keywords details completed
+2. Lesson 01 Step02 complete
+3. Lesson01 Step03 Complete
+GUI CHANGES:-
+1. Rearranged the menus. Changed some names.
+_______________________________________________________________________________
+v0.6(31st August 2012)
+_________________________
+URL: http://www.fileden.com/files/2012/8/23/3340224/Setup%20v0.6.zip
+
+CONTENT UPDATE:-
+1. Lesson01 Step02 Nearly Complete.
+2. Keywords Added to glossary of Keywords - Information also added to many of them
+OTHER:-
+1. Formatters made that will help in adding content to glossary
+_______________________________________________________________________________
+v0.5(29th August 2012)
+_________________________
+URL: http://www.fileden.com/files/2012/8/23/3340224/Setup%20v0.5.zip
+
+GUI CHANGES:-
+1. Improved the formatting of the content
+2. Added Glossary to the menu
+3. About Glossary added
+4. Software's appearance changes to open Glossary Screens
+5. The labels of the displays and lists now change according to the context
+OTHER:-
+1. Developed the Formatter for converting the text to VB Strings
+2. Did a code overhaul:-
+	2.1. Strings converted from Paras to single lines
+	2.2. Modularized the design
+_______________________________________________________________________________
+v0.4(28th August 2012)
+_________________________
+URL: http://www.fileden.com/files/2012/8/23/3340224/Setup%20v0.4.zip
+
+CONTENT UPDATE:-
+1. Lesson01 Step01 completed
+GUI CHANGES:-
+1.The formatting of the content improved
+2. Added "Why use this" to the menu
+OTHER:-
+1. Got frustrated with formatting the text to VB Strings. Thought of Giving Up
+_______________________________________________________________________________
+v0.3(28th August 2012)
+_________________________
+URL: http://www.fileden.com/files/2012/8/23/3340224/Setup%20v0.3.zip
+
+CONTENT UPDATE:-
+1. Lesson01 Step01 nearly complete
+GUI CHANGES:-
+1.GUI Overhauled - Much Better Looking
+2. Added more options to the menu
+_______________________________________________________________________________
+v0.2(27th August 2012)
+_________________________
+URL: http://www.fileden.com/files/2012/8/23/3340224/Setup%20v0.2.zip
+
+GUI CHANGES:-
+1. GUI enhanced
+2. Lesson Selection and Step Selection Added
+3. Radio buttons added for making the sections in each step
+4. Rich Text Box Added
+_______________________________________________________________________________
+v0.1(24th August 2012)
+_________________________
+URL: http://www.fileden.com/files/2012/8/23/3340224/Code%20generator%20v0.1.zip
+
+GUI CHANGES:-
+1. Basic GUI developed with a simple menu containing 3 options.  Each option displayed a message

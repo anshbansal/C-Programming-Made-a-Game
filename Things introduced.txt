@@ -1,0 +1,28 @@
+-----------
+v0.9
+-----------
+sytem function's use for shut down, log off, restart, hibernate
+-----------
+Upto v0.8
+-----------
+Lesson01
+Step01
+1. CodeBlocks Software. Shortcut for making new files
+2. stdio.h and void main() are written in all programs
+3. Keywords:- IDE, Source Code, Programming, C Language
+Step02
+1. SHORTCUT:- for build(F9)
+2. printf(), \n, \t, Comments
+3. Keywords:- Escape Identifiers, line break, new line, tab feed
+Step03
+1. VARIABLE:- int
+2. Printing integer variable
+3. Operator:- +
+4. scanf()
+5. if-else ladder
+6. MADE:- calculator
+Step04
+1. while loop
+2. system("cls")
+3. for-loop
+4. MADE:- PATTERNS upto Diamond pattern. Used user choice to change the size of patterns
