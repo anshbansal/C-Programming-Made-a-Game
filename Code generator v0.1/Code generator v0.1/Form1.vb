@@ -1,7 +1,7 @@
 ﻿Public Class Form1
 
     Const String_Version As String =
-        "v 0.3"
+        "v 0.4"
     Const String_Project_Start As String =
         "24th August 2012"
     Const String_Version_Release As String =
@@ -44,32 +44,44 @@
         "Tool on which the Codes have been tested" &
         Chr(13) &
         "1. Code:Blocks (An Open Source C/C++ IDE)  http://www.codeblocks.org/"
-    Const String_Update =
+    Const String_Update As String =
         "https://programmingmadeagame.wordpress.com/download-links/" &
         Chr(13) & Chr(13) &
-        "The above link is the one at which the latest version will always be posted"
+        "The above link is the website at which the latest version of this software will always be posted at the top" &
+        Chr(13) & Chr(13) &
+        "If you have downloaded a new version of this software then you do not need to uninstall this version. The Setup of the new version will automatically update the software."
+    Const String_Why_Use_This_Software As String =
+        "You may be thinking ""Why should I use this Software?""" &
+        Chr(13) & Chr(13) &
+        "   The answer is" &
+        Chr(13) &
+        "       1. Because it can teach you to make softwares easily" &
+        Chr(13) &
+        "       2. Because it is simple to learn by using this software" &
+        Chr(13) &
+        "       3. Because this software will be updated regularly and you will get new content frequently"
     Const String_Lesson01_Goal As String =
-                "->Use a software to make a simple software"
+                "1. Use a software to make a simple software"
     Const String_Lesson01_Step01_Goal As String =
-        "These are the Goals of this Step:-" &
+        "THE GOALS" &
         Chr(13) & Chr(13) &
-        "->Getting a software for making software" &
+        "1. Getting a software for making software" &
         Chr(13) &
-        "->Installing the software" &
+        "2. Installing the software" &
         Chr(13) &
-        "->Starting the software" &
+        "3. Starting the software" &
         Chr(13) &
-        "->Copying something into the software" &
+        "4. Copying something into the software" &
         Chr(13) &
-        "->Making a simple software" &
+        "5. Making a simple software" &
+        Chr(13) & Chr(13) & Chr(13) &
+        "What SHOULD NOT BE THE GOAL" &
         Chr(13) & Chr(13) &
-        "What is NOT the goal" &
-        Chr(13) &
-        "->To know what is happening when we are doing the instructions given next" &
-        Chr(13) &
-        "Just follow the step-by-step instructions. Things will be explained later." &
+        "To know how the things are happening when we are following the instructions given next. Just follow the step-by-step instructions. Things will be explained later." &
         Chr(13) & Chr(13) &
-        "The instructions given next may be many in number but they are EASY TO USE step-by-step instructions and easy to use. So now click on instructions button"
+        "DO NOT BE AFRAID TO FOLLOW THE INSTRUCTIONS" &
+        Chr(13) & Chr(13) &
+        "There are 12 instructions given next BUT they are EASY TO USE step-by-step instructions. So now click on instructions button"
     Const String_Lesson01_Step01_Instructions As String =
         "1. If you have Code:Blocks 10.05 mingw already installed on your computer then you can go to point 5." &
         Chr(13) & Chr(13) &
@@ -105,7 +117,7 @@
         Chr(13) & Chr(13) &
         "12. Now Press F9. Wait a moment and a screen will appear. There is 'I just made a software' written on it and some other things also written in the next lines." &
         Chr(13) & Chr(13) & Chr(13) &
-        "So that is the simple software running. So we completed our last goal also. " &
+        "So that is the simple software running. So we completed our last goal also. Also the first main goal of this lesson has also been completed" &
         Chr(13) & Chr(13) &
         "That was not difficult. Was it? Remember that you will not have to download the software again. It will be installed in your computer so you just need to copy some words into it, press F9 and your software will be made"
     Const String_Lesson01_Step01_Code_To_Be_Copied As String =
@@ -119,9 +131,86 @@
         Chr(13) &
         "}"
     Const String_Lesson01_Step01_Details_Of_The_Code As String =
-        ""
+        "SUGGESTED:-" &
+        Chr(13) & Chr(13) &
+        "When Reading this section feel free to switch between the section ""Code to be Copied"" and this section." &
+        " I would advise to switch when you do not know any word that we are talking about." &
+        " Switch to ""Code to be copied"" section and find where the word is in the Code." &
+        " Switch back to this section and read the explanation of the word." &
+        " Do this again and again until you think you understand." &
+        " If you face any problem understanding then Contact Me." &
+        Chr(13) & Chr(13) & Chr(13) &
+        "EXPLANATION" &
+        Chr(13) & Chr(13) &
+        "1. #include<stdio.h>" &
+        Chr(13) &
+        "   A. This is the thing written in the first line." &
+        Chr(13) &
+        "   B. You will see this line in ALMOST ALL softwares made using C language." &
+        Chr(13) &
+        "   C. For now it is enough to know that this is known as a ""LIBRARY"" " &
+        Chr(13) &
+        "   D. It is used in this software to teach ""printf"" (explained later) to display on the screen" &
+        Chr(13) & Chr(13) &
+        "2. void main()" &
+        Chr(13) &
+        "   A. This is second thing that is in the Code" &
+        Chr(13) &
+        "   B. This is present in ALL softwares made by C Language" &
+        Chr(13) &
+        "   C. For now it is enough to know that this is known as a ""FUNCTION""" &
+        Chr(13) &
+        "   D. Without this a software made in C Language CANNOT DO ANYTHING" &
+        Chr(13) & Chr(13) &
+        "3. printf(""\n\n\nI just made a software\n\n\n\n"");" &
+        Chr(13) &
+        "   A. This is the thing that displays ""I just made a software"" on the screen" &
+        Chr(13) &
+        "   B. It is also a ""FUNCTION""" &
+        Chr(13) &
+        "   C. It is used in MANY places where we want to display something on the screen" &
+        Chr(13) &
+        "   D. In C language displaying on the screen is called printing on the screen so this FUNCTION which does the displaying is named printf. If you are worrying about the f we will explain that later" &
+        Chr(13) & Chr(13) &
+        "4. {  } -The Braces Used" &
+        Chr(13) &
+        "   A. These braces are used for containing all the code" &
+        Chr(13) &
+        "   B. After every void main() these braces are a MUST" &
+        Chr(13) &
+        "   C. Most of the code is written inside it. Like printf statement" &
+        Chr(13) & Chr(13) &
+        "Now, Click on the next section ""Further Technical Details"""
     Const String_Lesson01_Step01_Further_Technical_Details As String =
-        ""
+        "Till now you have followed many steps and been introduced to many new things. If you wish to take a rest it is suggested that you take it now. These details are meant for the time when you want to know even more. If you wish to skip this step then do it. If want to know more then here is more things for you to know." &
+        Chr(13) & Chr(13) & Chr(13) &
+        "TERMS RELATED TO MAKING SOFTWARE" &
+        Chr(13) &
+        "Explained Simply" &
+        Chr(13) & Chr(13) &
+        "1. C Software/IDE/Integrated Development Environment" &
+        Chr(13) &
+        "The goal of Step01 was to get a software for making softwares. Now, what is this software? In Technical terms it is known as an ""IDE"" or Integrated Development Environment. It is a combination of many softwares that are all needed to make a software." &
+        Chr(13) & Chr(13) &
+        "2. Code/C Code/Source Code" &
+        Chr(13) &
+        "We copied a Code into the IDE and made a software using that code. It is also known as Source code or C Souce Code or C Code. Now, what is this code? Code is group of instructions that computer can understand. These instructions tell computer what to do, how to do it and when to do it. For example,  printf is an instruction for displaying things on the screen. " &
+        Chr(13) & Chr(13) &
+        "3. Programming" &
+        Chr(13) &
+        " For making software we need to write codes in a language that computer can understand. Writing this language is known as programming." &
+        Chr(13) & Chr(13) &
+        "4. C Language" &
+        Chr(13) &
+  "The software's name is ""C Programming Made A Game"". So what is this C language? C is a famous programming language that is used for all different kinds of things. Its capacity goes from displaying things on the screen to making a complete Operating System(e.g. Windows, Linux etc.)" &
+        Chr(13) & Chr(13) & Chr(13) &
+        "SOME QUESTIONS ANSWERED" &
+        Chr(13) &
+        "1. How can I change the thing displayed on the screen in the software that I made?" &
+        Chr(13) &
+        "A. Just place the thing that you want to display between the stating "" and the ending "" in printf." &
+        Chr(13) & Chr(13) & Chr(13) &
+        "This Step is done. Now you can select Step02 from the list of steps"
     Const String_Lesson02_Goal As String =
         ""
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -155,12 +244,16 @@
         Display.Text = String_Update
     End Sub
 
+    Private Sub WhyThisSoftwareToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles WhyThisSoftwareToolStripMenuItem.Click
+        Current_Display.Clear()
+        Display.Text = String_Why_Use_This_Software
+    End Sub
+
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Select Lessons.SelectedItem
             Case "Lesson 01"
                 Current_Display.Clear()
                 Current_Display.Text = String_Lesson01_Goal
-
                 Me.Steps.Items.Clear()
                 Me.Steps.Items.Add("Step 01")
                 Me.Steps.Items.Add("Step 02")
@@ -189,7 +282,6 @@
                         Display.Text = ""
                 End Select
             Case "Lesson 02"
-                Current_Display.Text = ""
                 Select Case Steps.SelectedItem
                     Case "Step 01"
                         Display.Text = ""
@@ -209,7 +301,6 @@
                         Display.Text = ""
                 End Select
             Case "Lesson 02"
-                Current_Display.Text = ""
                 Select Case Steps.SelectedItem
                     Case "Step 01"
                         Display.Text = ""
@@ -229,7 +320,6 @@
                         Display.Text = ""
                 End Select
             Case "Lesson 02"
-                Current_Display.Text = ""
                 Select Case Steps.SelectedItem
                     Case "Step 01"
                         Display.Text = ""
@@ -249,7 +339,6 @@
                         Display.Text = ""
                 End Select
             Case "Lesson 02"
-                Current_Display.Text = ""
                 Select Case Steps.SelectedItem
                     Case "Step 01"
                         Display.Text = ""
@@ -269,7 +358,6 @@
                         Display.Text = ""
                 End Select
             Case "Lesson 02"
-                Current_Display.Text = ""
                 Select Case Steps.SelectedItem
                     Case "Step 01"
                         Display.Text = ""
@@ -284,3 +372,4 @@
     End Sub
 
 End Class
+

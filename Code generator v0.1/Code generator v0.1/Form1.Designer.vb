@@ -29,6 +29,7 @@ Partial Class Form1
         Me.HelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContactMeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UpdateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WhyThisSoftwareToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Lessons = New System.Windows.Forms.ListBox()
@@ -50,10 +51,10 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.AboutToolStripMenuItem1, Me.TechnicalToolStripMenuItem1, Me.HelToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.AboutToolStripMenuItem1, Me.TechnicalToolStripMenuItem1, Me.HelToolStripMenuItem, Me.WhyThisSoftwareToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(796, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(823, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -93,6 +94,12 @@ Partial Class Form1
         Me.UpdateToolStripMenuItem.Name = "UpdateToolStripMenuItem"
         Me.UpdateToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
         Me.UpdateToolStripMenuItem.Text = "Update"
+        '
+        'WhyThisSoftwareToolStripMenuItem
+        '
+        Me.WhyThisSoftwareToolStripMenuItem.Name = "WhyThisSoftwareToolStripMenuItem"
+        Me.WhyThisSoftwareToolStripMenuItem.Size = New System.Drawing.Size(144, 20)
+        Me.WhyThisSoftwareToolStripMenuItem.Text = "Why Use This Software?"
         '
         'Button1
         '
@@ -152,7 +159,7 @@ Partial Class Form1
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(618, 254)
+        Me.RadioButton1.Location = New System.Drawing.Point(656, 254)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(52, 17)
         Me.RadioButton1.TabIndex = 12
@@ -163,7 +170,7 @@ Partial Class Form1
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(618, 276)
+        Me.RadioButton2.Location = New System.Drawing.Point(656, 276)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(79, 17)
         Me.RadioButton2.TabIndex = 13
@@ -174,7 +181,7 @@ Partial Class Form1
         'RadioButton3
         '
         Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(618, 299)
+        Me.RadioButton3.Location = New System.Drawing.Point(656, 299)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(113, 17)
         Me.RadioButton3.TabIndex = 14
@@ -185,7 +192,7 @@ Partial Class Form1
         'RadioButton4
         '
         Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(618, 322)
+        Me.RadioButton4.Location = New System.Drawing.Point(656, 322)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(115, 17)
         Me.RadioButton4.TabIndex = 15
@@ -196,7 +203,7 @@ Partial Class Form1
         'RadioButton5
         '
         Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(618, 345)
+        Me.RadioButton5.Location = New System.Drawing.Point(656, 345)
         Me.RadioButton5.Name = "RadioButton5"
         Me.RadioButton5.Size = New System.Drawing.Size(143, 17)
         Me.RadioButton5.TabIndex = 16
@@ -211,7 +218,7 @@ Partial Class Form1
         Me.Display.Location = New System.Drawing.Point(164, 23)
         Me.Display.Name = "Display"
         Me.Display.ReadOnly = True
-        Me.Display.Size = New System.Drawing.Size(436, 350)
+        Me.Display.Size = New System.Drawing.Size(454, 350)
         Me.Display.TabIndex = 17
         Me.Display.Text = ""
         '
@@ -219,7 +226,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(624, 24)
+        Me.Label2.Location = New System.Drawing.Point(649, 24)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(153, 16)
         Me.Label2.TabIndex = 18
@@ -228,10 +235,10 @@ Partial Class Form1
         'Current_Display
         '
         Me.Current_Display.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Current_Display.Location = New System.Drawing.Point(606, 56)
+        Me.Current_Display.Location = New System.Drawing.Point(624, 56)
         Me.Current_Display.Name = "Current_Display"
         Me.Current_Display.ReadOnly = True
-        Me.Current_Display.Size = New System.Drawing.Size(178, 169)
+        Me.Current_Display.Size = New System.Drawing.Size(199, 169)
         Me.Current_Display.TabIndex = 19
         Me.Current_Display.Text = ""
         '
@@ -239,7 +246,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(660, 40)
+        Me.Label4.Location = New System.Drawing.Point(686, 40)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(79, 16)
         Me.Label4.TabIndex = 20
@@ -248,7 +255,7 @@ Partial Class Form1
         'RadioButton6
         '
         Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Location = New System.Drawing.Point(618, 231)
+        Me.RadioButton6.Location = New System.Drawing.Point(656, 231)
         Me.RadioButton6.Name = "RadioButton6"
         Me.RadioButton6.Size = New System.Drawing.Size(51, 17)
         Me.RadioButton6.TabIndex = 21
@@ -261,7 +268,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(796, 381)
+        Me.ClientSize = New System.Drawing.Size(823, 381)
         Me.Controls.Add(Me.RadioButton6)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Current_Display)
@@ -282,7 +289,7 @@ Partial Class Form1
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "C Programming Made A Game v0.3"
+        Me.Text = "C Programming Made A Game "
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -312,5 +319,6 @@ Partial Class Form1
     Friend WithEvents TechnicalToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ContactMeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents UpdateToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents WhyThisSoftwareToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
